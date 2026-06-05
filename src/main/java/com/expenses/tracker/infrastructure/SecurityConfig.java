@@ -38,10 +38,11 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/h2-console/**").permitAll()
+                .requestMatchers("/api/users/register", "/api/users/login").permitAll()
                 .requestMatchers("/actuator/health", "/actuator/info").permitAll()
                 .anyRequest().authenticated()
             )
-            .csrf(csrf -> csrf.ignoringRequestMatchers("/h2-console/**"))
+            .csrf(csrf -> csrf.ignoringRequestMatchers("/h2-console/**", "/api/users/register", "/api/users/login"))
             .headers(headers -> headers.frameOptions(frame -> frame.sameOrigin()))
             .formLogin(Customizer.withDefaults())
             .httpBasic(Customizer.withDefaults());
