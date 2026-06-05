@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew:*)",
+      "Bash(find src:*)",
+      "Bash(grep -r:*)",
+      "Bash(grep -rn:*)",
+      "Bash(ls:*)",
+      "Bash(ls -la:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/vijayapal.ponram/Projects/workshop/expenses_tracker/.claude/hooks/post-edit-compile.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/vijayapal.ponram/Projects/workshop/expenses_tracker/.claude/hooks/stop-git-status.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
