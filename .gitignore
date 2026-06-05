@@ -1,0 +1,25 @@
+.gradle/
+.idea/
+*.iml
+out/
+build/
+*.class
+*.jar
+*.war
+*.zip
+target/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# Logs
+logs/
+*.log
