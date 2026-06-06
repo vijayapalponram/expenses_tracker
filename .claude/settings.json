@@ -1,4 +1,7 @@
 {
+  "enabledPlugins": {
+    "jdtls-lsp@claude-plugins-official": true
+  },
   "permissions": {
     "allow": [
       "Bash(./gradlew:*)",

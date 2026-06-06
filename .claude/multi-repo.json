@@ -1,0 +1,16 @@
+{
+  "repos": [
+    {
+      "name": "expenses-tracker-api",
+      "path": "/Users/vijayapal.ponram/Projects/workshop/expenses_tracker",
+      "description": "Spring Boot 3.3 REST API — hexagonal architecture, JWT auth, H2 + Flyway",
+      "stack": "Java 21, Spring Boot, Gradle"
+    },
+    {
+      "name": "expenses-tracker-ui",
+      "path": "/Users/vijayapal.ponram/Projects/workshop/flat-expenses-tracker/frontend",
+      "description": "Frontend UI for the flat expenses tracker",
+      "stack": "check package.json for framework details"
+    }
+  ]
+}
